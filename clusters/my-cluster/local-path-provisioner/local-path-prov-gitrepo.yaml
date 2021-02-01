@@ -5,6 +5,6 @@ metadata:
   namespace: local-path-storage
 spec:
   interval: 60m
-  url: https://github.com/rancher/local-path-provisioner
+  url: https://github.com/kingdonb/local-path-provisioner
   ref:
-    branch: master
+    branch: default-storage-class
