@@ -5,7 +5,7 @@ metadata:
   namespace: kube-system
 spec:
   interval: 5m
-  path: "./manifests/release/"
+  path: "./manifests/insecure-release/"
   prune: true
   sourceRef:
     kind: GitRepository

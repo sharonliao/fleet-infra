@@ -1,3 +1,6 @@
 [submodule "apps/local-path-provisioner"]
 	path = apps/local-path-provisioner
 	url = git@github.com:kingdonb/local-path-provisioner.git
+[submodule "apps/metrics-server"]
+	path = apps/metrics-server
+	url = git@github.com:kingdonb/metrics-server
