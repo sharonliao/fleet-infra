@@ -7,4 +7,4 @@ spec:
   interval: 60m
   url: https://github.com/kingdonb/metrics-server
   ref:
-    branch: master
+    branch: use-insecure-ip-without-san-cert
