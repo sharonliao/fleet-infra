@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: metrics-server
+  namespace: kube-system
+spec:
+  interval: 60m
+  url: https://github.com/kubernetes-sigs/metrics-server
+  ref:
+    branch: default-storage-class
