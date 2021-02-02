@@ -15,5 +15,5 @@ spec:
         namespace: metrics-server
       interval: 1m
   values:
-    args:
-    - --kubelet-preferred-address-types=InternalIP
+    extraArgs:
+      kubelet-preferred-address-types: InternalIP
