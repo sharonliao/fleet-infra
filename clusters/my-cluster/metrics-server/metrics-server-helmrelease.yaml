@@ -17,3 +17,4 @@ spec:
   values:
     extraArgs:
       kubelet-preferred-address-types: InternalIP
+      kubelet-insecure-tls: true
