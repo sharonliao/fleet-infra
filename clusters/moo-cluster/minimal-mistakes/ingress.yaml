@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minimal-mistakes
+  namespace: minimal-mistakes
+spec:
+  rules:
+  - host: minimal-mistakes.jk.diversek8s.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: minimal-mistakes
+            port:
+              number: 80
+        path: /
+        pathType: ImplementationSpecific
