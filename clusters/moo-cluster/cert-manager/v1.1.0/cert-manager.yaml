@@ -26283,6 +26283,9 @@ spec:
         - --v=2
         - --cluster-resource-namespace=$(POD_NAMESPACE)
         - --leader-election-namespace=kube-system
+        - --default-issuer-name=example-clusterissuer
+        - --default-issuer-kind=ClusterIssuer
+        - --default-issuer-group=cert-manager.io
         env:
         - name: POD_NAMESPACE
           valueFrom:
