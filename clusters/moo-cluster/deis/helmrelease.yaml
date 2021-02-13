@@ -14,4 +14,9 @@ spec:
         name: hephy
         namespace: flux-system
       interval: 1m
-  values: {}
+  values:
+    global:
+      use_cni: true
+    router:
+      host_port:
+        enabled: true
