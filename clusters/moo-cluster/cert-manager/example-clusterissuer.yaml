@@ -4,6 +4,7 @@ metadata:
   name: example-clusterissuer
 spec:
   acme:
+    email: acme@teamhephy.info
     server: https://acme-staging-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: example-clusterissuer-account-key
