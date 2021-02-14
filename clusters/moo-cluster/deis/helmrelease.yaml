@@ -16,7 +16,7 @@ spec:
       sourceRef:
         kind: GitRepository
         name: hephy-workflow
-        namespace: deis
+        namespace: flux-system
       interval: 5m
   values:
     global:
