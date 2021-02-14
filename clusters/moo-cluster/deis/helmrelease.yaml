@@ -4,6 +4,7 @@ metadata:
   name: hephy
   namespace: flux-system
 spec:
+  suspend: true
   interval: 5m
   targetNamespace: deis
   chart:
