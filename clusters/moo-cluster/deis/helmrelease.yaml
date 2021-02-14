@@ -2,13 +2,14 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: hephy
-  namespace: deis
+  namespace: flux-system
 spec:
   interval: 5m
   chart:
     spec:
       chart: workflow
       version: '2.22.3'
+      targetNamespace: deis
       sourceRef:
         kind: HelmRepository
         name: hephy
