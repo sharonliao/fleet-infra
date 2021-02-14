@@ -15,7 +15,8 @@ spec:
         kind: HelmRepository
         name: hephy
         namespace: flux-system
-      interval: 1m
+      interval: 5m
+      timeout: 10m
   values:
     global:
       use_cni: true
