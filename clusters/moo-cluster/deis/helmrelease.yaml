@@ -5,11 +5,11 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
+  targetNamespace: deis
   chart:
     spec:
       chart: workflow
       version: '2.22.3'
-      targetNamespace: deis
       sourceRef:
         kind: HelmRepository
         name: hephy
