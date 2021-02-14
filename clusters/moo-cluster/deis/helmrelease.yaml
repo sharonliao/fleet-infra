@@ -14,9 +14,9 @@ spec:
       chart: workflow
       version: '2.22.3'
       sourceRef:
-        kind: HelmRepository
-        name: hephy
-        namespace: flux-system
+        kind: GitRepository
+        name: hephy-workflow
+        namespace: deis
       interval: 5m
   values:
     global:

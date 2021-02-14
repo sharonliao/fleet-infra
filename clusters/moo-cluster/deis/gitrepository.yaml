@@ -1,0 +1,15 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: hephy-workflow
+  namespace: deis
+spec:
+  interval: 5m
+  url: https://github.com/kingdonb/fleet-infra
+  ref:
+    branch: main
+  ignore: |
+    # exclude all
+    /*
+    # include charts directory
+    !/apps/hephy-workflow/
