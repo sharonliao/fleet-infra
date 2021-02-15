@@ -12,5 +12,5 @@ spec:
   selector:
     app: deis-builder
 {{ if .Values.global.experimental_native_ingress }}
-  type: "LoadBalancer"
+  type: "NodePort"
 {{ end }}
