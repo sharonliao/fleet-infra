@@ -5,7 +5,7 @@ metadata:
   namespace: deis
 spec:
   suspend: false
-  interval: 5m
+  interval: 15m
   targetNamespace: deis
   storageNamespace: deis
   timeout: 10m
@@ -17,7 +17,7 @@ spec:
         kind: GitRepository
         name: hephy-workflow
         namespace: deis
-      interval: 5m
+      interval: 15m
   values:
     global:
       use_cni: true
