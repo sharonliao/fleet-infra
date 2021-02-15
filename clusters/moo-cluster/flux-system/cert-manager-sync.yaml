@@ -5,6 +5,8 @@ metadata:
   name: cert-manager
   namespace: flux-system
 spec:
+  dependsOn:
+    - name: flux-system
   interval: 10m0s
   path: ./moo-cluster/cluster-issuers
   prune: true
