@@ -5,7 +5,7 @@ metadata:
   namespace: deis
 spec:
   interval: 5m
-  url: ssh://git@github.com/kingdonb/fleet-infra
+  url: https://github.com/kingdonb/fleet-infra
   ref:
     branch: main
   secretRef:
