@@ -1,0 +1,5 @@
+controller:
+  platform_domain: jk.diversek8s.io
+global:
+  experimental_native_ingress: true
+  use_cni: true
