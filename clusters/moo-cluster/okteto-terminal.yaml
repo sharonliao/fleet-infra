@@ -15,7 +15,7 @@ spec:
       version: '0.2'
       sourceRef:
         kind: GitRepository
-        name: terminal
+        name: okteto-charts
         namespace: default
       interval: 15m
   values:
