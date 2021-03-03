@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: okteto-charts
+  namespace: flux-system
+spec:
+  interval: 15m0s
+  ref:
+    branch: master
+  url: https://github.com/okteto/charts
