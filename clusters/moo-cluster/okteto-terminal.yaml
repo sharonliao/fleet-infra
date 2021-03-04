@@ -21,7 +21,7 @@ spec:
   values:
     resources:
       limits:
-        memory: "64Mi"
-        cpu: "100m"
+        memory: "1Gi"
+        cpu: "2"
     ingress:
       enabled: false
