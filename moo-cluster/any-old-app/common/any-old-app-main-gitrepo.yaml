@@ -3,7 +3,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   name: any-old-app-main
-  namespace: flux-system
+  namespace: devl
 spec:
   interval: 1m0s
   ref:
