@@ -6,8 +6,8 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - name: flux-system
-      namespace: flux-system
+    - name: any-old-app-devl
+      namespace: devl
   interval: 1m0s
   path: ./moo-cluster/any-old-app
   prune: true
