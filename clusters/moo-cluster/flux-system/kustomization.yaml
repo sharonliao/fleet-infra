@@ -4,4 +4,4 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - cert-manager-sync.yaml
-# - any-old-app-sync.yaml
+- any-old-app-sync.yaml
