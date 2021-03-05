@@ -3,18 +3,14 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
   name: any-old-app
-  namespace: flux-system
+  namespace: devl
 spec:
-  dependsOn:
-    - name: flux-system
-      namespace: flux-system
   interval: 1m0s
-  path: ./moo-cluster/any-old-app
-  targetNamespace: devl
+  path: ./flux
   prune: true
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: any-old-app-main
   validation: client
   postBuild:
     substitute:
