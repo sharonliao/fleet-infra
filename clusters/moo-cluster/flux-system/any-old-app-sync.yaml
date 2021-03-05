@@ -6,15 +6,9 @@ metadata:
   namespace: devl
 spec:
   interval: 1m0s
-  path: ./flux
+  path: ./flux-config
   prune: true
   sourceRef:
     kind: GitRepository
     name: any-old-app-main
   validation: client
-  postBuild:
-    substitute:
-      GIT_SHA: ''
-    substituteFrom:
-      - kind: ConfigMap
-        name: any-old-app-version
