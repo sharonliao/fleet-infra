@@ -6,10 +6,10 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./flux-config
+  path: ./
   prune: true
   sourceRef:
     kind: GitRepository
-    name: any-old-app-main
-    namespace: devl
+    name: flux-system
+    namespace: deploy
   validation: client
