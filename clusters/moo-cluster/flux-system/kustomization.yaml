@@ -3,4 +3,6 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
+- flux-system-deploy-branch.yaml
 - cert-manager-sync.yaml
+- any-old-app-sync.yaml
