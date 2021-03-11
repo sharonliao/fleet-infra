@@ -10,6 +10,5 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: flux-system
-    namespace: deploy
+    name: flux-system-deploy
   validation: client
