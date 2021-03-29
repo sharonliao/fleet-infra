@@ -9,7 +9,7 @@ cd $CLUSTER
 
 kubectl create secret generic \
 	--from-literal=GITHUB_TOKEN=$GITHUB_TOKEN \
-	--from-literal=GITHUB_USER=$GITHUB_USER \
+	--from-literal=GITHUB_USER=${GITHUB_REPOSITORY##*/} \
 	--dry-run=client -oyaml \
 	github-token-auth > github-token-auth.yaml
 
