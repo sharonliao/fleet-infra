@@ -1,0 +1,40 @@
+apiVersion: v1
+data:
+    GITHUB_TOKEN: ENC[AES256_GCM,data:eHntF9QF/jo5DcPKEBGmYgFz/cDXMcp+l886v8xphC0WQhg++GM3kzx2qt+gQGfmilWegQF2sIk=,iv:7eiueZXCj9goetxkvueIzFp0RxV61DOLhPAS2PlU36E=,tag:X4YQ528wxHC6Hu3p3hhF1w==,type:str]
+    GITHUB_USER: ENC[AES256_GCM,data:b/dQv2nK6QHOnO5E,iv:ZQqYfBdDX4bpxWBQhy22PvPN4Nd8k7pg11X7BmCLoj8=,tag:ebS6mmQZ0dp6C4lGzY+qMQ==,type:str]
+kind: Secret
+metadata:
+    creationTimestamp: null
+    name: github-token-auth
+    namespace: devl
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2021-03-29T18:51:20Z"
+    mac: ENC[AES256_GCM,data:XDFr59xfVktcKKBUpGka44OVyaKg4si5zP3DwSht4pK9YMQtpinDefaoQclZQoSuEPdw77iXEZ8ZmcX91b/fNOCEfn17SACzqJfMr4EuBbPtGb3pOdBPR5Va9IE4qjCWjbEtf489bTgw9NKsvX2gesUQ6y8p9a9qNmHmFUV7bQo=,iv:I9LGlZTwSiCK1KfDMtHUsZKQ5kf86b6AJkCPatND+TU=,tag:ZVHydChKLUzw4wEQW4jFlg==,type:str]
+    pgp:
+        - created_at: "2021-03-29T18:51:20Z"
+          enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA06rSFOpPqRMARAAl5+MBcLTuCt+a1fvAvI+1Q4jjg4l7Vj976MjkNJIW+/Z
+            1qTC8/Qy+aolPg9IULF6tu+7OuMie67Yj1OYtL9nuybBROOVVa99t02zLnb3v9uu
+            yk7Wuwx3OWj6Op6gxxmEmUQJM0D2ixk+XhL9x4PNIIFropMNSZqpDdKonHS/P89t
+            iYm7povds9x1ykOK8A+e9SHoCFHiPU9PiBfiMS27FlvO0qw4Eg/gTppgGBtbyheo
+            dTIMcXOJsBRmtyjuQJZ+Iq4Wu5sQM5lEA1ogx88aOZ8QFRtfpykKI+kHQmK+0DIQ
+            e6GnMKlnA3PQbA41SsdLhzg1Hn/jMWK8NvQcRy3/+AJ7wVKoIFMA/cTONTb40ln1
+            dYMH2OdXlrbzsQTbLO9Kb1Jy+mWSrhkunMiWVKjPHSp7l2o1QJAafUnal3nBHRhd
+            5Y0eCDckN1oXZbAn45MnMzbgbKQdY4ARIAjzz/kpieymBuB2Jx4Be1PLJpr+3Yz3
+            gtG+t3VJuWKeiBvoXPyMBdDX5ZMtHKV2DEuH4dQQMF7hniEBHmyXANKTAKRAVB0L
+            kizBplI6Yg2EhqHCSVJCcR3sijnARJAB57P19pmh5EINDtUWz1hJoMhyi72jIbQs
+            DCffphmeoTw3CFWC43BEggczBkqEf+5Yt8nkkjixOk5u5iSzswEEePBH/8SeMuzS
+            XAEaIw25GZFQHUZew1lF1Ue/MLjL4t64FsPtY1DGy3zfrgMW6PdOwI4jx1VHiDnE
+            bD8LBOdTSTHXvizoiwrUht/MTaroKjU7vKGB46ywwqUyiO6bLUqowN7+NycT
+            =L3D6
+            -----END PGP MESSAGE-----
+          fp: A883B02E14B7EAF0A6BDAF69ECD23C5916E31D4F
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.0
