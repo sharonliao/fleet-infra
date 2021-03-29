@@ -20,5 +20,5 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with:
-          add: clusters/moo-cluster/encrypted-github-token-auth.yaml
+          add: clusters/moo-cluster/devl/encrypted-github-token-auth.yaml
           message: Commit GITHUB_TOKEN sops-encrypted

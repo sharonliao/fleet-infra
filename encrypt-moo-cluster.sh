@@ -14,4 +14,4 @@ kubectl create secret generic \
 	--dry-run=client -oyaml \
 	github-token-auth > github-token-auth.yaml
 
-sops -e --output-type=yaml github-token-auth.yaml > encrypted-github-token-auth.yaml
+sops -e --output-type=yaml github-token-auth.yaml > devl/encrypted-github-token-auth.yaml
