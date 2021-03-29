@@ -8,6 +8,7 @@ gpg --import $CLUSTER/.sops.pub.asc
 cd $CLUSTER
 
 kubectl create secret generic \
+	--namespace devl \
 	--from-literal=GITHUB_TOKEN=$PERSONAL_TOKEN \
 	--from-literal=GITHUB_USER=kingdonb \
 	--dry-run=client -oyaml \
