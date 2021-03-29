@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: azure/setup-kubectl@v1
       - name: pipe decrypted secret into sops secret
-        run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} GITHUB_REPOSITORY=${{ secrets.GITHUB_REPOSITORY }} ./encrypt-moo-cluster.sh
+        run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} GITHUB_REPOSITORY=${{ github.repository }} ./encrypt-moo-cluster.sh
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
