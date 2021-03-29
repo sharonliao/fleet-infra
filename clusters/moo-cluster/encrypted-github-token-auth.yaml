@@ -6,6 +6,7 @@ kind: Secret
 metadata:
     creationTimestamp: null
     name: github-token-auth
+    namespace: devl
 sops:
     kms: []
     gcp_kms: []
