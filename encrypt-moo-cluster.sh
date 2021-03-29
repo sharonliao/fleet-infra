@@ -2,7 +2,10 @@
 
 set -feuxo pipefail
 
-cd clusters/moo-cluster
+CLUSTER=./clusters/moo-cluster
+
+gpg --import $CLUSTER/.sops.pub.asc
+cd $CLUSTER
 
 kubectl create secret generic \
 	--from-literal=GITHUB_TOKEN=$GITHUB_TOKEN \
