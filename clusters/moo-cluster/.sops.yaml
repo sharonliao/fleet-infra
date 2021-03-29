@@ -2,5 +2,5 @@ creation_rules:
   - path_regex: .*.yaml
     encrypted_regex: ^(data|stringData)$
     pgp: A883B02E14B7EAF0A6BDAF69ECD23C5916E31D4F
-  - path_regex: secrets/application.properties$
+  - path_regex: application\.properties$
     pgp: A883B02E14B7EAF0A6BDAF69ECD23C5916E31D4F
