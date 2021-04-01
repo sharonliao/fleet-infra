@@ -5,7 +5,7 @@ metadata:
   name: any-old-app-devl
 spec:
   interval: 1m0s
-  path: ./manifests
+  path: ./
   prune: false
   sourceRef:
     kind: GitRepository
