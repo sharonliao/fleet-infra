@@ -15,7 +15,7 @@ spec:
         backend:
           serviceName: notification-webhook
           servicePort: 9292
-  tls:
-  - hosts:
-    - gitno.hephy.pro
-    secretName: gitno-hephy-pro-tls
+#  tls:
+#  - hosts:
+#    - gitno.hephy.pro
+#    secretName: gitno-hephy-pro-tls
