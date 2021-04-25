@@ -21,8 +21,9 @@ spec:
       hostNetwork: true
       hostPort:
         enabled: true
-        http: 8082
-        https: 9443
+        ports:
+          http: 8082
+          https: 9443
       kind: DaemonSet
       service:
         type: NodePort
