@@ -11,7 +11,9 @@ spec:
   - host: socryx-topled.arvo.network
     http:
       paths:
-      - backend:
+      - pathType: Prefix
+        path: /
+        backend:
           service:
             name: socryx-topled
             port:
