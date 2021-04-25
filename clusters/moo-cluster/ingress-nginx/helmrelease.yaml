@@ -30,6 +30,6 @@ spec:
       kind: DaemonSet
       service:
         type: NodePort
-        ports:
+        nodePorts:
           http: 32082
           https: 32443
