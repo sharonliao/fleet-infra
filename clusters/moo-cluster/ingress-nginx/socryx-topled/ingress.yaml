@@ -2,16 +2,17 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: socryx-topled
+  namespace: ingress-nginx
   annotations:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     nginx.ingress.kubernetes.io/ssl-passthrough: "true"
 spec:
   rules:
-  - host: argocd.example.com
+  - host: socryx-topled.arvo.network
     http:
       paths:
       - backend:
           service:
-            name: socryx-topled.arvo.network
+            name: socryx-topled
             port:
               number: 443
