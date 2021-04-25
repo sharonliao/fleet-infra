@@ -19,8 +19,10 @@ spec:
       2222: "deis/deis-builder:2222"
     controller:
       hostNetwork: true
-      daemonSet:
-        useHostPort: true
+      hostPort:
+        enabled: true
+        http: 8082
+        https: 9443
       kind: DaemonSet
       service:
         type: NodePort
