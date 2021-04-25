@@ -2,7 +2,7 @@ apiVersion: notification.toolkit.fluxcd.io/v1beta1
 kind: Receiver
 metadata:
   name: flux-csh
-  namespace: yebyen-okd4
+  namespace: flux-system
 spec:
   type: github
   events:
@@ -12,10 +12,4 @@ spec:
     name: webhook-token
   resources:
     - kind: GitRepository
-      name: flux-csh
-    - kind: GitRepository
-      name: any-old-app-main
-    - kind: GitRepository
-      name: any-old-app-prod
-    - kind: GitRepository
-      name: any-old-app-deploy
+      name: flux-system
