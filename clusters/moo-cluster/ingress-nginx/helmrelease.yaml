@@ -24,3 +24,6 @@ spec:
       kind: DaemonSet
       service:
         type: NodePort
+        ports:
+          http: 8082
+          https: 9443
