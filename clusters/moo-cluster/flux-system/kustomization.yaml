@@ -5,7 +5,7 @@ resources:
 - gotk-sync.yaml
 - flux-system-deploy-branch.yaml
 - cert-manager-sync.yaml
-- any-old-app-sync.yaml
+#- any-old-app-sync.yaml
 - gitno-hephy-pro-ingress.yaml
 - webhook-receiver.yaml
 - webhook-token-secret.yaml
