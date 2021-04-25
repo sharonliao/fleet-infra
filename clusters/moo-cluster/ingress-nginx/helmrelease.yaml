@@ -18,6 +18,9 @@ spec:
     tcp:
       2222: "deis/deis-builder:2222"
     controller:
+      containerPort:
+        http: 8082
+        https: 9443
       hostNetwork: true
       hostPort:
         enabled: true
