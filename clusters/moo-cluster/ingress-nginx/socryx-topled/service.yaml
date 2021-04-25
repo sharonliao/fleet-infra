@@ -1,0 +1,8 @@
+kind: "Service"
+apiVersion: "v1"
+metadata:
+  name: "socryx-topled"
+spec:
+  type: ExternalName
+  externalName: moo.nerdland.local
+selector: {} 
