@@ -12,7 +12,7 @@ spec:
   chart:
     spec:
       chart: terminal
-      version: '0.2'
+      version: '0.4'
       sourceRef:
         kind: GitRepository
         name: okteto-charts
