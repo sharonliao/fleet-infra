@@ -4,7 +4,6 @@ metadata:
   name: terminal
   namespace: default
 spec:
-  suspend: false
   interval: 15m
   targetNamespace: default
   storageNamespace: default
@@ -12,7 +11,7 @@ spec:
   chart:
     spec:
       chart: terminal
-      version: '0.4'
+      version: '0.3'
       sourceRef:
         kind: GitRepository
         name: okteto-charts
