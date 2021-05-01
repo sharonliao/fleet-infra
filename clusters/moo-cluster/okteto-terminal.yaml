@@ -20,6 +20,9 @@ spec:
       interval: 15m
   values:
     resources:
+      requests:
+        memory: "50Mi"
+        cpu: "100m"
       limits:
         memory: "1Gi"
         cpu: "2"
