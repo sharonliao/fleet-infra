@@ -2,9 +2,8 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: terminal
-  namespace: flux-system
+  namespace: default
 spec:
-  suspend: false
   interval: 15m
   targetNamespace: default
   storageNamespace: default
@@ -12,7 +11,7 @@ spec:
   chart:
     spec:
       chart: terminal
-      version: '0.2'
+      version: '0.3'
       sourceRef:
         kind: GitRepository
         name: okteto-charts
@@ -20,6 +19,9 @@ spec:
       interval: 15m
   values:
     resources:
+      requests:
+        memory: "50Mi"
+        cpu: "100m"
       limits:
         memory: "1Gi"
         cpu: "2"
