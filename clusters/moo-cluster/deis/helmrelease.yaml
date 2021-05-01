@@ -4,7 +4,7 @@ metadata:
   name: hephy
   namespace: deis
 spec:
-  suspend: false
+  suspend: true
   interval: 15m
   targetNamespace: deis
   storageNamespace: deis
