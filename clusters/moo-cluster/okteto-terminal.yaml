@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: terminal
-  namespace: flux-system
+  namespace: default
 spec:
   suspend: false
   interval: 15m
