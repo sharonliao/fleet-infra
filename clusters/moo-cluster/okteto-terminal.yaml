@@ -18,6 +18,12 @@ spec:
         namespace: default
       interval: 15m
   values:
+    noop:
+      example: |
+        {
+          "multiline": "string",
+          "example": "json"
+        }
     resources:
       requests:
         memory: "50Mi"
