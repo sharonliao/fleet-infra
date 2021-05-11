@@ -24,3 +24,12 @@ spec:
       experimental_native_ingress: true
     controller:
       platform_domain: jk.diversek8s.io
+  postRenderers:
+    - kustomize:
+        patchesStrategicMerge:
+          - kind: Service
+            apiVersion: v1
+            metadata:
+              name: deis-builder
+            spec:
+              type: ClusterIP
