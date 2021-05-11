@@ -12,10 +12,10 @@ spec:
   chart:
     spec:
       chart: apps/hephy-workflow
-      version: '2.22.3'
+      version: '^2.22.3'
       sourceRef:
-        kind: GitRepository
-        name: hephy-workflow
+        kind: HelmRepository
+        name: hephy
         namespace: deis
       interval: 15m
   values:
