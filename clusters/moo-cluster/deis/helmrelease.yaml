@@ -11,7 +11,7 @@ spec:
   timeout: 10m
   chart:
     spec:
-      chart: apps/hephy-workflow
+      chart: workflow
       version: '^2.22.3'
       sourceRef:
         kind: HelmRepository
