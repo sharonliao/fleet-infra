@@ -16,7 +16,7 @@ spec:
       interval: 1m
   values:
     tcp:
-      2222: "deis/deis-builder:2222"
+      "2222": "deis/deis-builder:2222"
     controller:
       extraArgs:
         enable-ssl-passthrough: ""
