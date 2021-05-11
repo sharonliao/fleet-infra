@@ -10,3 +10,7 @@ resources:
 - webhook-receiver.yaml
 - webhook-token-secret.yaml
 - on-call-webapp-alert.yaml
+images:
+- name: ghcr.io/fluxcd/kustomize-controller
+  newName: ghcr.io/fluxcd/kustomize-controller
+  newTag: kustomize-v4-rc-de0310e7
