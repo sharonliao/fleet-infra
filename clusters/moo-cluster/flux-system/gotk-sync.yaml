@@ -5,12 +5,12 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
-  interval: 40m0s
+  interval: 1m0s
   ref:
     branch: main
   secretRef:
     name: flux-system
-  url: https://github.com/kingdonb/fleet-infra
+  url: https://github.com/kingdonb/fleet-infra.git
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
@@ -18,15 +18,10 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
-  interval: 30m0s
+  interval: 10m0s
   path: ./clusters/moo-cluster
   prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
   validation: client
-  decryption:
-    provider: sops
-    secretRef:
-      name: sops-gpg
-
