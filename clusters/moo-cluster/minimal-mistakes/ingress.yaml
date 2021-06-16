@@ -1,23 +1,23 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  annotations:
-    cert-manager.io/cluster-issuer: example-clusterissuer
-  name: minimal-mistakes
-  namespace: minimal-mistakes
-spec:
-  rules:
-  - host: minimal-mistakes.jk.diversek8s.io
-    http:
-      paths:
-      - backend:
-          service:
-            name: minimal-mistakes
-            port:
-              number: 80
-        path: /
-        pathType: ImplementationSpecific
-  tls:
-  - hosts:
-    - minimal-mistakes.jk.diversek8s.io
-    secretName: minimal-mistakes-tls
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   annotations:
+#     cert-manager.io/cluster-issuer: example-clusterissuer
+#   name: minimal-mistakes
+#   namespace: minimal-mistakes
+# spec:
+#   rules:
+#   - host: minimal-mistakes.jk.diversek8s.io
+#     http:
+#       paths:
+#       - backend:
+#           service:
+#             name: minimal-mistakes
+#             port:
+#               number: 80
+#         path: /
+#         pathType: ImplementationSpecific
+#   tls:
+#   - hosts:
+#     - minimal-mistakes.jk.diversek8s.io
+#     secretName: minimal-mistakes-tls
