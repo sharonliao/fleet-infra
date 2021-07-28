@@ -4,11 +4,9 @@ resources:
 # - gotk-components.yaml
 - gotk-sync.yaml
 - cert-manager-sync.yaml
-- webhook-slack-url-secret.yaml
 - slack-notification.yaml
 - gitno-hephy-pro-ingress.yaml
 - webhook-receiver.yaml
-- webhook-token-secret.yaml
 - on-call-webapp-alert.yaml
 patchesStrategicMerge:
 - gotk-patches.yaml
