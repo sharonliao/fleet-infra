@@ -1,28 +1,20 @@
-# apiVersion: helm.toolkit.fluxcd.io/v2beta1
-# kind: HelmRelease
-# metadata:
-#   name: ingress-nginx
-#   namespace: ingress-nginx
-# spec:
-#   interval: 5m
-#   chart:
-#     spec:
-#       chart: ingress-nginx
-#       version: '3.23.0'
-#       sourceRef:
-#         kind: HelmRepository
-#         name: ingress-nginx
-#         namespace: flux-system
-#       interval: 1m
-#   values:
-#     tcp:
-#       "2222": "deis/deis-builder:2222"
-#     controller:
-#       extraArgs:
-#         enable-ssl-passthrough: ""
-#       kind: DaemonSet
-#       service:
-#         type: NodePort
-#         nodePorts:
-#           http: 32082
-#           https: 32443
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: ingress-nginx
+  namespace: ingress-nginx
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: ingress-nginx
+      version: '^3.23.0'
+      sourceRef:
+        kind: HelmRepository
+        name: ingress-nginx
+        namespace: flux-system
+      interval: 1m
+  values:
+    controller:
+      extraArgs:
+        enable-ssl-passthrough: ""
