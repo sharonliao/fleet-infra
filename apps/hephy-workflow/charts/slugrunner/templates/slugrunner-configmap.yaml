@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: slugrunner-config
-  labels:
-    heritage: deis
-data:
-  image: "{{.Values.org}}/slugrunner:{{.Values.docker_tag}}"
