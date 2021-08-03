@@ -16,5 +16,8 @@ spec:
       interval: 1m
   values:
     controller:
+      image:
+        tag: v1.0.0-beta.1
+        digest: sha256:f058f3fdc940095957695829745956c6acddcaef839907360965e27fd3348e2e
       extraArgs:
         enable-ssl-passthrough: ""
