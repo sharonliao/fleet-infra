@@ -22,5 +22,5 @@ spec:
       extraArgs:
         enable-ssl-passthrough: ""
       admissionWebhooks:
-        patch:
-          enabled: true
+        enabled: false
+#        patch:
