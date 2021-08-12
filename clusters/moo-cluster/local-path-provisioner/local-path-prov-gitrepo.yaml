@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: local-path-prov
+  namespace: local-path-storage
+spec:
+  interval: 60m
+  url: https://github.com/kingdonb/local-path-provisioner
+  ref:
+    branch: default-storage-class
