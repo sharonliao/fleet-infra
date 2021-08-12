@@ -1,0 +1,28 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: jenkins
+  namespace: jenkins
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: jenkins
+      version: '^2.5.4'
+      sourceRef:
+        kind: HelmRepository
+        name: ingress-nginx
+        namespace: flux-system
+      interval: 1m
+  values:
+    controller:
+      ingress:
+        enabled: true
+        apiVersion: networking.k8s.io/v1
+        hostName: jenkins.hephy.pro
+        annotations:
+          cert-manager.io/cluster-issuer: letsencrypt-production
+        tls:
+        - secretName: jenkins.hephy.pro
+          hosts:
+            - jenkins.hephy.pro
