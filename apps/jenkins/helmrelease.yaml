@@ -19,6 +19,9 @@ spec:
       interval: 40m
   values:
     controller:
+      image: kingdonb/jenkins
+      tag: lts
+      imagePullPolicy: IfNotPresent
       ingress:
         enabled: true
         apiVersion: networking.k8s.io/v1
