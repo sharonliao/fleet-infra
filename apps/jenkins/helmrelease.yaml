@@ -21,6 +21,7 @@ spec:
     controller:
       image: kingdonb/jenkins
       tag: lts
+      installPlugins: false
       imagePullPolicy: IfNotPresent
       ingress:
         enabled: true
