@@ -9,11 +9,14 @@ spec:
     spec:
       chart: jenkins
       version: '^2.5.4'
+      releaseName: jenkins
       sourceRef:
         kind: HelmRepository
-        name: ingress-nginx
+        name: jenkins
         namespace: flux-system
       interval: 1m
+      targetNamespace: jenkins
+      storageNamespace: jenkins
   values:
     controller:
       ingress:
