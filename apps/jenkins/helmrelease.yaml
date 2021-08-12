@@ -5,11 +5,11 @@ metadata:
   namespace: jenkins
 spec:
   interval: 5m
+  releaseName: jenkins
   chart:
     spec:
       chart: jenkins
       version: '^2.5.4'
-      releaseName: jenkins
       sourceRef:
         kind: HelmRepository
         name: jenkins
