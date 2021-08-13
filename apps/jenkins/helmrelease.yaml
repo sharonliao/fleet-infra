@@ -37,7 +37,7 @@ spec:
       JCasC:
         defaultConfig: false
         configScripts:
-          jenkins: |
+          jenkins:
             agentProtocols:
             - "JNLP4-connect"
             - "Ping"
@@ -121,14 +121,14 @@ spec:
             - all:
                 name: "all"
             viewsTabBar: "standard"
-          security: |
+          security:
             apiToken:
               creationOfLegacyTokenEnabled: false
               tokenGenerationOnCreationEnabled: false
               usageStatisticsEnabled: true
             sSHD:
               port: -1
-          unclassified: |
+          unclassified:
             buildDiscarders:
               configuredBuildDiscarders:
               - "jobBuildDiscarder"
@@ -146,7 +146,7 @@ spec:
             junitTestResultStorage:
               storage: "file"
             location:
-              adminAddress: "Team Hephy Admin <hephy-admin@nerdland.info>"
+              adminAddress: "address not configured yet <nobody@nowhere>"
               url: "https://jenkins.hephy.pro/"
             mailer:
               charset: "UTF-8"
@@ -154,7 +154,7 @@ spec:
               useTls: false
             pollSCM:
               pollingThreadCount: 10
-          tool: |
+          tool:
             git:
               installations:
               - home: "git"
