@@ -83,6 +83,7 @@ spec:
               crumbIssuer:
                 standard:
                   excludeClientIPFromCrumb: true
+              disableRememberMe: false
               labelAtoms:
               - name: "jenkins-jenkins-agent"
               - name: "master"
