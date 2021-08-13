@@ -37,6 +37,23 @@ spec:
       JCasC:
         defaultConfig: false
         configScripts:
+          authorizationStrategy: |
+            loggedInUsersCanDoAnything:
+              allowAnonymousRead: false
+          securityRealm: |
+            local:
+              allowsSignup: false
+              enableCaptcha: false
+              users:
+              - id: "admin"
+                name: "Jenkins Admin"
+                properties:
+                - "apiToken"
+                - "mailer"
+                - "myView"
+                - preferredProvider:
+                    providerId: "default"
+                - "timezone"
           welcome-message: |
             jenkins:
               systemMessage: Welcome to our CI\CD server.  This Jenkins is configured and managed 'as code'.
