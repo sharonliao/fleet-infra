@@ -20,7 +20,7 @@ spec:
   values:
     controller:
       image: kingdonb/jenkins # {"$imagepolicy": "flux-system:jenkins:image"}
-      tag: lts # {"$imagepolicy": "flux-system:jenkins:tag"}
+      tag: lts-be39f1e8-1628866404 # {"$imagepolicy": "flux-system:jenkins:tag"}
       installPlugins: false
       imagePullPolicy: IfNotPresent
       ingress:
@@ -31,9 +31,9 @@ spec:
           cert-manager.io/cluster-issuer: letsencrypt-production
           kubernetes.io/ingress.class: nginx
         tls:
-        - secretName: jenkins.hephy.pro
-          hosts:
-            - jenkins.hephy.pro
+          - secretName: jenkins.hephy.pro
+            hosts:
+              - jenkins.hephy.pro
       JCasC:
         defaultConfig: false
         configScripts:
