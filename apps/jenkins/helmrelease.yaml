@@ -37,6 +37,22 @@ spec:
       JCasC:
         defaultConfig: false
         configScripts:
+          securityrealmconfig: |
+            jenkins:
+              securityRealm:
+                local:
+                  allowsSignup: false
+                  enableCaptcha: false
+                  users:
+                  - id: "admin"
+                    name: "Jenkins Admin"
+                    properties:
+                    - "apiToken"
+                    - "mailer"
+                    - "myView"
+                    - preferredProvider:
+                        providerId: "default"
+                    - "timezone"
           imported: |
             jenkins:
               agentProtocols:
@@ -99,20 +115,6 @@ spec:
               remotingSecurity:
                 enabled: true
               scmCheckoutRetryCount: 0
-              securityRealm:
-                local:
-                  allowsSignup: false
-                  enableCaptcha: false
-                  users:
-                  - id: "admin"
-                    name: "Jenkins Admin"
-                    properties:
-                    - "apiToken"
-                    - "mailer"
-                    - "myView"
-                    - preferredProvider:
-                        providerId: "default"
-                    - "timezone"
               slaveAgentPort: 50000
               updateCenter:
                 sites:
@@ -129,6 +131,19 @@ spec:
                 usageStatisticsEnabled: true
               sSHD:
                 port: -1
+          welcome-message: |
+            jenkins:
+              systemMessage: Welcome to our CI\CD server.  This Jenkins is configured and managed 'as code'.
+          tool-config: |
+            tool:
+              git:
+                installations:
+                - home: "git"
+                  name: "Default"
+              mavenGlobalConfig:
+                globalSettingsProvider: "standard"
+                settingsProvider: "standard"
+          unclassified-config: |
             unclassified:
               buildDiscarders:
                 configuredBuildDiscarders:
@@ -155,14 +170,3 @@ spec:
                 useTls: false
               pollSCM:
                 pollingThreadCount: 10
-            tool:
-              git:
-                installations:
-                - home: "git"
-                  name: "Default"
-              mavenGlobalConfig:
-                globalSettingsProvider: "standard"
-                settingsProvider: "standard"
-          welcome-message: |
-            jenkins:
-              systemMessage: Welcome to our CI\CD server.  This Jenkins is configured and managed 'as code'.
