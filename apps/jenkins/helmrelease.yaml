@@ -35,7 +35,7 @@ spec:
           hosts:
             - jenkins.hephy.pro
       JCasC:
-        defaultConfig: true
+        defaultConfig: false
         configScripts:
           imported: |
             jenkins:
