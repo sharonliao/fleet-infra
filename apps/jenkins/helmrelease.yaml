@@ -56,7 +56,7 @@ spec:
                   authenticatedUserCreateJobPermission: false
                   authenticatedUserReadPermission: false
                   organizationNames: "kingdon-ci"
-                  useRepositoryPermissions: false
+                  useRepositoryPermissions: true
 
           crumb-issuer: |
             jenkins:
