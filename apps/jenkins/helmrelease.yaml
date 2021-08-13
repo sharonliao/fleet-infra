@@ -58,6 +58,12 @@ spec:
               remotingSecurity:
                 enabled: true
 
+          location: |
+            jenkins:
+              location:
+                adminAddress: "Jenkins Admin <jenkins-admin@nerdland.info>"
+                url: "https://jenkins.hephy.pro/"
+
       additionalExistingSecrets:
         - name: jenkins-github
           keyName: secret-token
