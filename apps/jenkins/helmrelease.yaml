@@ -35,6 +35,7 @@ spec:
           hosts:
             - jenkins.hephy.pro
       JCasC:
+        defaultConfig: false
         configScripts:
           jenkins: |
             agentProtocols:
