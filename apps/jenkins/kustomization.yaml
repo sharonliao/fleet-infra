@@ -8,3 +8,4 @@ resources:
 - kingdonb-jenkins-registry.yaml
 - jenkins-policy.yaml
 - flux-system-rw-gitrepo.yaml
+- jenkins-charts-gitrepo.yaml
