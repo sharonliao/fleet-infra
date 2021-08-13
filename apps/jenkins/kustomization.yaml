@@ -7,3 +7,4 @@ resources:
 - apps-jenkins-automation.yaml
 - kingdonb-jenkins-registry.yaml
 - jenkins-policy.yaml
+- flux-system-rw-gitrepo.yaml
