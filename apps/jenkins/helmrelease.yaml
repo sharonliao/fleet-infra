@@ -20,7 +20,7 @@ spec:
   values:
     controller:
       image: kingdonb/jenkins # {"$imagepolicy": "flux-system:jenkins:image"}
-      tag: lts-24e09a72-1628870376 # {"$imagepolicy": "flux-system:jenkins:tag"}
+      tag: lts-37205268-1628873765 # {"$imagepolicy": "flux-system:jenkins:tag"}
       installPlugins: false
       imagePullPolicy: IfNotPresent
       ingress:
