@@ -46,6 +46,11 @@ spec:
                   clientID: "b4424bc483948a93d4d3"
                   clientSecret: "${jenkins-github-secret-token}"
                   oauthScopes: "read:org,user:email"
+          crumb-issuer: |
+            jenkins:
+              crumbIssuer:
+                standard:
+                  excludeClientIPFromCrumb: true
       additionalSecrets:
         - name: jenkins-github
           keyName: secret-token
