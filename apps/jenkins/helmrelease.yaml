@@ -36,7 +36,7 @@ spec:
             - jenkins.hephy.pro
       JCasC:
         configScripts:
-          jenkins:
+          jenkins: |
             agentProtocols:
             - "JNLP4-connect"
             - "Ping"
@@ -120,14 +120,14 @@ spec:
             - all:
                 name: "all"
             viewsTabBar: "standard"
-          security:
+          security: |
             apiToken:
               creationOfLegacyTokenEnabled: false
               tokenGenerationOnCreationEnabled: false
               usageStatisticsEnabled: true
             sSHD:
               port: -1
-          unclassified:
+          unclassified: |
             buildDiscarders:
               configuredBuildDiscarders:
               - "jobBuildDiscarder"
@@ -153,7 +153,7 @@ spec:
               useTls: false
             pollSCM:
               pollingThreadCount: 10
-          tool:
+          tool: |
             git:
               installations:
               - home: "git"
