@@ -13,6 +13,8 @@ spec:
   resources:
     - kind: GitRepository
       name: flux-system
+    - kind: GitRepository
+      name: flux-system-rw
 ---
 apiVersion: v1
 kind: Service
