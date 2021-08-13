@@ -59,7 +59,7 @@ spec:
                 enabled: true
 
           location: |
-            jenkins:
+            unclassified:
               location:
                 adminAddress: "Jenkins Admin <jenkins-admin@nerdland.info>"
                 url: "https://jenkins.hephy.pro/"
