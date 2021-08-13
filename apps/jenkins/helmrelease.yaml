@@ -51,6 +51,6 @@ spec:
               crumbIssuer:
                 standard:
                   excludeClientIPFromCrumb: true
-      additionalSecrets:
+      additionalExistingSecrets:
         - name: jenkins-github
           keyName: secret-token
