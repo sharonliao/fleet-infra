@@ -35,5 +35,10 @@ spec:
           hosts:
             - jenkins.hephy.pro
       JCasC:
-        defaultConfig: true
-        configScripts: {}
+        defaultConfig: false
+        configScripts:
+          welcome-message: |
+            jenkins:
+              systemMessage: Welcome to our CI\CD server.  This Jenkins is configured and managed 'as code'.
+          location: |
+            adminAddress: "Team Hephy Admin <hephy-admin@nerdland.info>"
