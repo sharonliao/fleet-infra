@@ -35,7 +35,7 @@ spec:
           hosts:
             - jenkins.hephy.pro
       JCasC:
-        defaultConfig: false
+        defaultConfig: true
         configScripts:
           imported: |
             jenkins:
@@ -147,7 +147,7 @@ spec:
               junitTestResultStorage:
                 storage: "file"
               location:
-                adminAddress: "address not configured yet <nobody@nowhere>"
+                adminAddress: "Team Hephy Admin <hephy-admin@nerdland.info>"
                 url: "https://jenkins.hephy.pro/"
               mailer:
                 charset: "UTF-8"
