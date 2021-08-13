@@ -69,6 +69,7 @@ spec:
 
           distributed-builds: |
             jenkins:
+              numExecutors: 0
               clouds:
               - kubernetes:
                   containerCap: 10
