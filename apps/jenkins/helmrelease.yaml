@@ -10,11 +10,11 @@ spec:
   storageNamespace: jenkins
   chart:
     spec:
-      chart: ./charts/jenkins
+      chart: jenkins
       version: '^3.5.10'
       sourceRef:
-        kind: GitRepository
-        name: jenkins-charts
+        kind: HelmRepository
+        name: jenkinsci
         namespace: flux-system
       interval: 40m
   values:
